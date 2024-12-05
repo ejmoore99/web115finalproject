@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="projectJS.js" defer></script>
+  </head>
+  <body>
+    <!-- Banner -->
+    <header>
+      <h1>Build Your Meal Plan</h1>
+      <h3>Ervin Moore | WEB-115 0003</h3>
+    </header>
+
+    <!-- User Inofrmation -->
+    <main>
+      <form id="mealPlanForm">
+        <h2>User Information</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="goal">Goal for the week:</label>
+        <input type="text" id="goal" name="goal" /><br />
+
+        <h2>Meal Plan</h2>
+        <div id="mealInputs">
+          <h3>Enter meals for each day:</h3>
+        </div>
+
+        <button type="button" id="generateButton">Generate Meal Plan</button>
+        <button type="reset">Clear Planner</button>
+      </form>
+
+      <button id="printButton" style="display: none">Print Planner</button>
+      <button id="downloadButton" style="display: none">
+        Download Planner
+      </button>
+    </main>
+  </body>
+</html>
